@@ -1,0 +1,37 @@
+{
+  "name": "@dezzmeister/symbolic-postfix",
+  "version": "1.0.0",
+  "description": "Tools to parse postfix expressions and build an abstract syntax tree, then calculate symbolic derivatives",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dezzmeister/npm-repos-symbolic-postfix.git"
+  },
+  "author": "Joe Desmond",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dezzmeister/npm-repos-symbolic-postfix/issues"
+  },
+  "homepage": "https://github.com/Dezzmeister/npm-repos-symbolic-postfix#readme",
+  "dependencies": {
+    "@dezzmeister/data-structures": "1.0.1-0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
