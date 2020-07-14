@@ -1,0 +1,7 @@
+{
+   "extends": ["tslint:recommended"],
+   "rules": {
+      "prefer-for-of": false,
+      "max-classes-per-file": [false, 4]
+   }
+}
